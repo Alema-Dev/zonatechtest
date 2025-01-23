@@ -516,12 +516,12 @@
 
 @media (max-width: 768px){
     .slider-wrapper .slider-item .slide-content > * {
-        max-width: 10%;
+        max-width: 100%;
     }
 }
     @media (max-width: 360px){
         .slider-item .slide-content .slide-button {
-            max-width: 50%;
+            max-width: 100%;
         }
 
 }
