@@ -34,9 +34,9 @@ const updateIndicator = (tab, index) => {
 
   //Inicializa instancia de swiper
 const swiper = new Swiper(".slider-container", {
-  effect: "fade",
-  speed: 1300,
-  autoplay: { delay: 4000 },
+  effect: "effect-creative",
+  speed: 800,
+  autoplay: { delay: 3500 },
   navigation:{
     prevEl: "#slide-prev",
     nextEl: "#slide-next"
