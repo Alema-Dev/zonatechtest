@@ -36,7 +36,7 @@ const updateIndicator = (tab, index) => {
 const swiper = new Swiper(".slider-container", {
   effect: "effect-creative",
   speed: 800,
-  autoplay: { delay: 3500 },
+  autoplay: { delay: 4000 },
   navigation:{
     prevEl: "#slide-prev",
     nextEl: "#slide-next"
@@ -60,3 +60,21 @@ sliderTabs.forEach((tab, index) => {
 
 updateIndicator(sliderTabs[0], 0);
 window.addEventListener("resize", () =>updateIndicator(sliderTabs[swiper.activeIndex], 0));
+
+  // Función para actualizar el placeholder según el tamaño de la pantalla
+  function updatePlaceholder() {
+    const input = document.getElementById('search-input');
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      input.placeholder = 'Estoy buscando...';
+    } else {
+      input.placeholder = 'Buscar productos por nombre, marca y más...';
+    }
+  }
+
+  // Llama a la función al cargar la página
+  updatePlaceholder();
+
+  // Escucha cambios en el tamaño de la pantalla
+  window.addEventListener('resize', updatePlaceholder);
+
+  
