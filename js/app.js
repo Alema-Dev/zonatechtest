@@ -60,21 +60,3 @@ sliderTabs.forEach((tab, index) => {
 
 updateIndicator(sliderTabs[0], 0);
 window.addEventListener("resize", () =>updateIndicator(sliderTabs[swiper.activeIndex], 0));
-
-  // Función para actualizar el placeholder según el tamaño de la pantalla
-  function updatePlaceholder() {
-    const input = document.getElementById('search-input');
-    if (window.matchMedia('(max-width: 768px)').matches) {
-      input.placeholder = 'Estoy buscando...';
-    } else {
-      input.placeholder = 'Buscar productos por nombre, marca y más...';
-    }
-  }
-
-  // Llama a la función al cargar la página
-  updatePlaceholder();
-
-  // Escucha cambios en el tamaño de la pantalla
-  window.addEventListener('resize', updatePlaceholder);
-
-  
