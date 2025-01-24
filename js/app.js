@@ -60,3 +60,6 @@ sliderTabs.forEach((tab, index) => {
 
 updateIndicator(sliderTabs[0], 0);
 window.addEventListener("resize", () =>updateIndicator(sliderTabs[swiper.activeIndex], 0));
+
+
+  
