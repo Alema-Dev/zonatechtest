@@ -32,23 +32,57 @@
           <span class="green-span">T</span><span class="white-span">ech</span>
         </a>
         <div class="navbar__elm">
-          <ul class="nav__list">
-            <li class="nav__link">
-              <a href="">Inicio</a>
-            </li>
-            <li class="nav__link">
-              <a href="">Productos</a>
-            </li>
-            <li class="nav__link">
-              <a href="">Horarios y ubicación</a>
-            </li>
-            <li class="nav__link">
-              <a href="">Promociones</a>
-            </li>
-            <li class="nav__link">
-              <a href="">Información adicional</a>
-            </li>
-          </ul>
+            <ul class="nav__list">
+              <li class="nav__link">
+                <a href="">Inicio</a>
+              </li>
+              <li class="nav__link dropdown">
+                <a href="#">Productos</a>
+                <ul class="dropdown__menu">
+                  <li><a href="#">Celulares</a></li>
+                  <li><a href="#">Notebook</a></li>
+                  <li><a href="#">Tablet</a></li>
+                  <li><a href="#">Consolas Gaming</a></li>
+                  <li><a href="#">Cámaras GoPro</a></li>
+                  <li class="dropdown__item">
+                    <a href="#">Periféricos</a> 
+                    <span class="material-symbols-outlined" id="submenu__arrow">arrow_forward_ios</span>
+                    <ul class="dropdown__submenu">
+                      <li><a href="#">Monitores y proyectores</a></li>
+                      <li><a href="#">Parlantes</a></li>
+                      <li><a href="#">Mouse</a></li>
+                      <li><a href="#">Teclado</a></li>
+                      <li><a href="#">Pad Teclado</a></li>
+                      <li><a href="#">Auriculares</a></li>
+                      <li><a href="#">Memoria SD</a></li>
+                      <li><a href="#">Pendrive</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#">Hardware</a> 
+                    <span class="material-symbols-outlined" id="submenu__arrow">arrow_forward_ios</span>
+                    <ul class="dropdown__submenu">
+                      <li><a href="#">Discos Externos</a></li>
+                      <li><a href="#">Discos SSD</a></li>
+                      <li><a href="#">Memoria RAM</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Convertidores Smart</a></li>
+                  <li><a href="#">Drones</a></li>
+                  <li><a href="#">Smartwatch</a></li>
+                  <li><a href="#">Accesorios Varios</a></li>
+                </ul>
+              </li>
+              <li class="nav__link">
+                <a href="">Horarios y ubicación</a>
+              </li>
+              <li class="nav__link">
+                <a href="">Promociones</a>
+              </li>
+              <li class="nav__link">
+                <a href="">Información adicional</a>
+              </li>
+            </ul>
           <form action="" class="navbar__search">
             <a href="#" class="search__icon">
               <img src="img/search-icon.png" alt="Buscar productos">
@@ -73,7 +107,7 @@
                 <a href="">Inicio</a>
               </li>
               <li class="nav__link-mobile">
-                <a href="">Precios y stock</a>
+                <a href="">Productos</a>
               </li>
               <li class="nav__link-mobile">
                 <a href="">Horarios y ubicación</a>
@@ -153,8 +187,9 @@
   </div>
   <div class="search-container">
     <form action = "" class="search-bar">
-      <input type="text" placeholder="Buscar productos por nombre, marca y más..." name="q" class="type">
+      <input type="text" id="search-input" placeholder="" name="q" class="type">
       <button type="submit"><img src="img/search-icon.png"></button>
+     
     </form>
   </div>
   <!-- Linking Swiper Script -->
