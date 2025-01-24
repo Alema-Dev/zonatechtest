@@ -630,6 +630,9 @@
     filter:grayscale(1);
 }
 
+.search-bar input{
+    color: var(--white);
+}
 
 .search-bar input:hover{
     background: transparent;
